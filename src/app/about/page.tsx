@@ -127,47 +127,47 @@ export default function About() {
             {[
               {
                 name: "Taiba Malik",
-                role: "Founder",
+                role: "Founder, Project Coordinator",
                 bio: "I'm Taiba Malik, founder of Move to YourGoals (MTY), where we help businesses grow with ease. After completing 120+ projects for 25+ clients, I'm now building a team to provide even more reliable support. With MTY, you'll always have a helping hand to move toward your goals!",
-                image: "/team/taiba-malik.jpg"
+                image: "/team/taiba.jpeg"
               },
               {
                 name: "Yousaf Khan",
-                role: "Co-Founder, Ruby on Rails Developer",
+                role: "Full Stack Ruby on Rails Developer",
                 bio: "I'm Yousaf Khan, Co-Founder of Move to YourGoals (MTY). With over 4+ years of experience as a Ruby on Rails developer, I specialize in building scalable, secure, and high-performance applications. My focus is on delivering seamless user experiences that help businesses thrive and move toward their goals with confidence.",
-                image: "/team/yousaf.jpg"
+                image: "/team/yousafkhan.jpeg"
               },
               {
                 name: "Haider",
                 role: "Social Media Manager",
                 bio: "I'm Haider, a Social Media Manager with 2+ years of experience. I craft strategies that engage audiences and drive results, helping businesses grow their online presence and achieve their goals.",
-                image: "/team/haider.jpg"
+                image: "/team/haider.jpeg"
               },
               {
                 name: "Ashar",
                 role: "Software Engineer",
                 bio: "I'm Ashar, a Software Engineer with a solid foundation in website backends. I enjoy taking on challenges and solving them by delivering high-quality, scalable, and clean code that drives user engagement and supports business growth. My goal is to provide innovative and reliable solutions that help businesses achieve success.",
-                image: "/team/ashar.jpg"
+                image: "/team/ashar.jpeg"
               },
               {
                 name: "Somana",
                 role: "Social Media Manager",
                 bio: "I'm Somana, a Social Media Manager with a knack for creating engaging and impactful content. I help businesses build their online presence, connect with their audience, and drive growth through strategic social media management. My goal is to make your brand shine and reach its full potential in the digital world.",
-                image: "/team/somana.jpg"
+                image: "/team/somana.jpeg"
               },
               {
                 name: "Taiba Ali",
                 role: "Virtual Assistant",
                 bio: "I'm Taiba Ali, a dedicated Virtual Assistant with a passion for helping businesses streamline their operations. With a keen eye for detail and strong organizational skills, I provide reliable support that allows entrepreneurs to focus on what truly matters—growing their business and achieving their goals.",
-                image: "/team/taiba-ali.jpg"
+                image: "/team/taibaali.jpeg"
               }
             ].map((member, index) => (
               <div key={index} className="flip-card h-80">
                 <div className="flip-card-inner w-full h-full">
                   {/* Front Side */}
                   <div className="flip-card-front bg-[var(--color-secondary)]/10 p-6 rounded-lg flex flex-col items-center justify-center h-full">
-                    <div className="aspect-square bg-[var(--color-primary)]/10 rounded-lg mb-4 w-24 h-24 flex items-center justify-center overflow-hidden">
-                      {/* Optionally use <img src={member.image} ... /> here */}
+                    <div className="aspect-square bg-[var(--color-primary)]/10 rounded-lg mb-4 w-32 h-32 flex items-center justify-center overflow-hidden">
+                      <img src={member.image} alt={member.name + ' photo'} className="w-full h-full object-cover rounded-lg" />
                     </div>
                     <h3 className="text-xl font-semibold mb-1 text-[var(--color-primary)]">{member.name}</h3>
                     <p className="text-[var(--color-accent)] mb-3">{member.role}</p>
