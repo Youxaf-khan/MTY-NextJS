@@ -131,7 +131,7 @@ export default function About() {
                 name: "Taiba Malik",
                 role: "Founder, Project Coordinator",
                 bio: "I'm Taiba Malik, founder of Move to YourGoals (MTY), where we help businesses grow with ease. After completing 120+ projects for 25+ clients, I'm now building a team to provide even more reliable support. With MTY, you'll always have a helping hand to move toward your goals!",
-                image: "/Team/Taiba.jpeg"
+                image: "/Team/taiba.jpeg"
               },
               {
                 name: "Yousaf Khan",
