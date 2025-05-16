@@ -131,37 +131,37 @@ export default function About() {
                 name: "Taiba Malik",
                 role: "Founder, Project Coordinator",
                 bio: "I'm Taiba Malik, founder of Move to YourGoals (MTY), where we help businesses grow with ease. After completing 120+ projects for 25+ clients, I'm now building a team to provide even more reliable support. With MTY, you'll always have a helping hand to move toward your goals!",
-                image: "/team/taiba.jpeg"
+                image: "/Team/TaibaMalik.jpeg"
               },
               {
                 name: "Yousaf Khan",
                 role: "Full Stack Ruby on Rails Developer",
                 bio: "I'm Yousaf Khan, Co-Founder of Move to YourGoals (MTY). With over 4+ years of experience as a Ruby on Rails developer, I specialize in building scalable, secure, and high-performance applications. My focus is on delivering seamless user experiences that help businesses thrive and move toward their goals with confidence.",
-                image: "/team/yousafkhan.jpeg"
+                image: "/Team/YousafKhan.jpeg"
               },
               {
                 name: "Haider",
                 role: "Social Media Manager",
                 bio: "I'm Haider, a Social Media Manager with 2+ years of experience. I craft strategies that engage audiences and drive results, helping businesses grow their online presence and achieve their goals.",
-                image: "/team/haider.jpeg"
+                image: "/Team/Haider.jpeg"
               },
               {
                 name: "Ashar",
                 role: "Software Engineer",
                 bio: "I'm Ashar, a Software Engineer with a solid foundation in website backends. I enjoy taking on challenges and solving them by delivering high-quality, scalable, and clean code that drives user engagement and supports business growth. My goal is to provide innovative and reliable solutions that help businesses achieve success.",
-                image: "/team/ashar.jpeg"
+                image: "/Team/Ashar.jpeg"
               },
               {
                 name: "Somana",
                 role: "Social Media Manager",
                 bio: "I'm Somana, a Social Media Manager with a knack for creating engaging and impactful content. I help businesses build their online presence, connect with their audience, and drive growth through strategic social media management. My goal is to make your brand shine and reach its full potential in the digital world.",
-                image: "/team/somana.jpeg"
+                image: "/Team/Somana.jpeg"
               },
               {
                 name: "Taiba Ali",
                 role: "Virtual Assistant",
                 bio: "I'm Taiba Ali, a dedicated Virtual Assistant with a passion for helping businesses streamline their operations. With a keen eye for detail and strong organizational skills, I provide reliable support that allows entrepreneurs to focus on what truly matters—growing their business and achieving their goals.",
-                image: "/team/taibaali.jpeg"
+                image: "/Team/TaibaAli.jpeg"
               }
             ].map((member, index) => (
               <div key={index} className="flip-card h-80">
