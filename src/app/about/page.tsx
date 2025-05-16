@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function About() {
   return (
     <div className="min-h-screen font-[var(--font-sans)]">
@@ -167,7 +169,14 @@ export default function About() {
                   {/* Front Side */}
                   <div className="flip-card-front bg-[var(--color-secondary)]/10 p-6 rounded-lg flex flex-col items-center justify-center h-full">
                     <div className="aspect-square bg-[var(--color-primary)]/10 rounded-lg mb-4 w-32 h-32 flex items-center justify-center overflow-hidden">
-                      <img src={member.image} alt={member.name + ' photo'} className="w-full h-full object-cover rounded-lg" />
+                      <Image
+                        src={member.image}
+                        alt={member.name + ' photo'}
+                        width={128}
+                        height={128}
+                        className="w-full h-full object-cover rounded-lg"
+                        priority={index < 2}
+                      />
                     </div>
                     <h3 className="text-xl font-semibold mb-1 text-[var(--color-primary)]">{member.name}</h3>
                     <p className="text-[var(--color-accent)] mb-3">{member.role}</p>
