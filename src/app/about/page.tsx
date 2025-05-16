@@ -167,7 +167,7 @@ export default function About() {
               <div key={index} className="flip-card h-80">
                 <div className="flip-card-inner w-full h-full">
                   {/* Front Side */}
-                  <div className="flip-card-front bg-[var(--color-secondary)]/10 p-6 rounded-lg flex flex-col items-center justify-center h-full">
+                  <div className="flip-card-front bg-[var(--color-primary)] p-6 rounded-lg flex flex-col items-center justify-center h-full">
                     <div className="aspect-square bg-[var(--color-primary)]/10 rounded-lg mb-4 w-32 h-32 flex items-center justify-center overflow-hidden">
                       <Image
                         src={member.image}
@@ -178,7 +178,7 @@ export default function About() {
                         priority={index < 2}
                       />
                     </div>
-                    <h3 className="text-xl font-semibold mb-1 text-[var(--color-primary)]">{member.name}</h3>
+                    <h3 className="text-xl font-semibold mb-1 text-[var(--color-light)]">{member.name}</h3>
                     <p className="text-[var(--color-accent)] mb-3">{member.role}</p>
                   </div>
                   {/* Back Side */}
