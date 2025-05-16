@@ -1,26 +1,115 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Brand Colors */
+  --color-primary: #375357;
+  --color-accent: #eaa854;
+  --color-dark: #333333;
+  --color-light: #ffffff;
+  --color-secondary: #d9ccc5;
+  --color-tertiary: #c3937d;
+  
+  /* Background and Foreground */
+  --background: var(--color-light);
+  --foreground: var(--color-dark);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-poppins);
+  --font-display: var(--font-poppins);
+  --font-special: var(--font-poppins);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: var(--color-dark);
+    --foreground: var(--color-light);
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-18px); }
+  100% { transform: translateY(0); }
+}
+
+.float-animate {
+  animation: float 3.5s ease-in-out infinite;
+}
+
+/* Flip Card Animation */
+.flip-card {
+  perspective: 1200px;
+}
+.flip-card-inner {
+  transition: transform 0.7s cubic-bezier(.4,2,.6,1);
+  transform-style: preserve-3d;
+  position: relative;
+}
+.flip-card:hover .flip-card-inner, .flip-card:focus-within .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+}
+.flip-card-front {
+  z-index: 2;
+}
+.flip-card-back {
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+
+/* Testimonials Carousel Styles */
+.testimonials-carousel .slick-dots {
+  bottom: -40px;
+}
+
+.testimonials-carousel .slick-dots li button:before {
+  color: var(--color-primary);
+  opacity: 0.3;
+}
+
+.testimonials-carousel .slick-dots li.slick-active button:before {
+  color: var(--color-primary);
+  opacity: 1;
+}
+
+.testimonials-carousel .slick-prev,
+.testimonials-carousel .slick-next {
+  z-index: 1;
+}
+
+.testimonials-carousel .slick-prev {
+  left: -25px;
+}
+
+.testimonials-carousel .slick-next {
+  right: -25px;
+}
+
+.testimonials-carousel .slick-prev:before,
+.testimonials-carousel .slick-next:before {
+  color: var(--color-primary);
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .testimonials-carousel .slick-prev {
+    left: -15px;
+  }
+  
+  .testimonials-carousel .slick-next {
+    right: -15px;
+  }
 }
